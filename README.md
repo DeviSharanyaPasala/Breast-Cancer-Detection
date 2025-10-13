@@ -8,7 +8,7 @@
 
 
 
-## 📘 Project Overview
+## Project Overview
 
 Breast cancer remains a major global health challenge, emphasizing the importance of early and accurate diagnosis. This project explores deep learning approaches for **automated breast cancer detection** using **mammogram images**. By applying and comparing various convolutional neural network (CNN) architectures, the study identifies the most effective model for improving diagnostic accuracy.
 
@@ -16,7 +16,7 @@ Traditional mammogram interpretation can be subjective and prone to error. This 
 
 
 
-## 🎯 Objectives
+## Objectives
 
 * To develop and compare multiple CNN architectures for mammogram classification.
 * To evaluate performance using metrics such as **Accuracy**, **F1-Score**, **Cohen’s Kappa**, and **AUC**.
@@ -24,7 +24,7 @@ Traditional mammogram interpretation can be subjective and prone to error. This 
 
 
 
-## 🧠 Models and Methods
+## Models and Methods
 
 The study experimented with several architectures:
 
@@ -41,7 +41,7 @@ All models were implemented using **TensorFlow** and **Keras**, with the **CBIS-
 
 
 
-## 🧩 Dataset
+## Dataset
 
 * **Source:** CBIS-DDSM (Curated Breast Imaging Subset of DDSM)
 * **Content:** 2,620 digitized mammography studies
@@ -50,7 +50,7 @@ All models were implemented using **TensorFlow** and **Keras**, with the **CBIS-
 
 
 
-## ⚙️ Implementation Steps
+## Implementation Steps
 
 1. **Data Preprocessing**
 
@@ -73,7 +73,7 @@ All models were implemented using **TensorFlow** and **Keras**, with the **CBIS-
 
 
 
-## 📊 Results
+## Results
 
 | Model                        | Accuracy   | AUC    | F1 Score | Cohen Kappa |
 | ---------------------------- | ---------- | ------ | -------- | ----------- |
@@ -88,11 +88,11 @@ All models were implemented using **TensorFlow** and **Keras**, with the **CBIS-
 | InceptionResNetV2            | 0.6948     | 0.5866 | 0.5625   | -0.9685     |
 | ResNet101                    | 0.6645     | 0.5462 | 0.5328   | -0.9672     |
 
-✅ **Best Model:** *InceptionResNet Architecture*
+**Best Model:** *InceptionResNet Architecture*
 
 
 
-## 💡 Key Findings
+## Key Findings
 
 * Deep learning models outperform traditional feature-engineering approaches.
 * Transfer learning using InceptionResNet achieved the highest detection accuracy.
@@ -101,14 +101,14 @@ All models were implemented using **TensorFlow** and **Keras**, with the **CBIS-
 
 
 
-## 🧾 Conclusion
+## Conclusion
 
 The project concludes that **InceptionResNet** provides the most accurate and reliable results among all tested architectures.
 With further tuning and access to more diverse datasets, these models can be integrated into **computer-aided diagnostic systems (CAD)** to support radiologists and reduce false positives and negatives in breast cancer detection.
 
 
 
-## 🧰 Technologies Used
+## Technologies Used
 
 * Python
 * TensorFlow
@@ -120,18 +120,18 @@ With further tuning and access to more diverse datasets, these models can be int
 
 
 
-## 📬 Contact
+## Contact
 
 For questions or collaboration, reach out:
 **Devi Sharanya Pasala**
-📧 [dpasala@albany.edu](mailto:dpasala@albany.edu)
+[dpasala@albany.edu](mailto:dpasala@albany.edu)
 
 
 
-## 📚 References
+## References
 
 All references used in this project are included in the full report and correspond to published works in *IEEE, Elsevier, and Springer* journals.
 
 
 
-### ⭐ If you find this project useful, please consider giving it a star on GitHub!
+### If you find this project useful, please consider giving it a star on GitHub!
