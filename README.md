@@ -12,8 +12,12 @@ The project emphasizes reproducibility, proper evaluation, and model comparison,
 - Mammography images labeled as **benign** or **malignant**
 - Images were resized and normalized for consistency across models
 
-Due to licensing restrictions, the dataset is not included in this repository. Users can download the dataset from the official CBIS-DDSM source and follow the preprocessing steps provided in the notebook.
+Due to licensing restrictions, the dataset cannot be redistributed through this repository.
+You can request and download the dataset from the official source:
 
+🔗 https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM
+
+After downloading, organize the images into train/validation/test folders as described in the notebook.
 ---
 
 ### Models Implemented
