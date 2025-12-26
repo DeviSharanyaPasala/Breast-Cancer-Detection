@@ -15,7 +15,7 @@ The project emphasizes reproducibility, proper evaluation, and model comparison,
 Due to licensing restrictions, the dataset cannot be redistributed through this repository.
 You can request and download the dataset from the official source:
 
-🔗 https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset
+🔗 https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset or https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM
 
 
 After downloading, organize the images into train/validation/test folders as described in the notebook.
