@@ -57,6 +57,13 @@ DenseNet121 achieved the most consistent performance across all evaluation metri
 
 ---
 
+### Experiment Notes
+- All models were trained using the same data splits and preprocessing steps.
+- Early stopping was used to reduce overfitting.
+- Performance differences were primarily driven by backbone architecture.
+
+---
+
 ### Why This Project Is Relevant
 - Demonstrates comparative model evaluation rather than single-model training  
 - Highlights responsible metric selection for medical image classification  
