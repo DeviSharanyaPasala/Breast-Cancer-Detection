@@ -5,7 +5,7 @@ This project focuses on the early detection of breast cancer using deep learning
 
 The project emphasizes reproducibility, proper evaluation, and model comparison, which are essential when applying machine learning to healthcare-related problems.
 
----
+
 
 ### Dataset
 - **CBIS-DDSM (Curated Breast Imaging Subset of DDSM)**
@@ -19,7 +19,7 @@ You can request and download the dataset from the official source:
 
 
 After downloading, organize the images into train/validation/test folders as described in the notebook.
----
+
 
 ### Models Implemented
 The following pre-trained CNN architectures were fine-tuned using transfer learning:
@@ -35,7 +35,7 @@ The following pre-trained CNN architectures were fine-tuned using transfer learn
 
 All models were trained using identical data splits and hyperparameter settings to ensure a fair comparison.
 
----
+
 
 ### Methodology
 1. Data preprocessing including resizing, normalization, and stratified splitting  
@@ -43,7 +43,7 @@ All models were trained using identical data splits and hyperparameter settings 
 3. Binary classification using binary cross-entropy loss  
 4. Model evaluation using multiple performance metrics  
 
----
+
 
 ### Results Summary
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
@@ -55,21 +55,21 @@ All models were trained using identical data splits and hyperparameter settings 
 
 DenseNet121 achieved the most consistent performance across all evaluation metrics, indicating strong feature reuse and generalization on mammography images.
 
----
+
 
 ### Experiment Notes
 - All models were trained using the same data splits and preprocessing steps.
 - Early stopping was used to reduce overfitting.
 - Performance differences were primarily driven by backbone architecture.
 
----
+
 
 ### Why This Project Is Relevant
 - Demonstrates comparative model evaluation rather than single-model training  
 - Highlights responsible metric selection for medical image classification  
 - Reflects real-world machine learning workflows used in healthcare analytics  
 
----
+
 
 ### How to Run
 ```bash
