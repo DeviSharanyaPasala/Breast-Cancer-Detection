@@ -1,7 +1,0 @@
-{
-  "best_model": "DenseNet121",
-  "input_size": [224, 224, 3],
-  "optimizer": "Adam",
-  "loss": "binary_crossentropy",
-  "classification_threshold": 0.5
-}
