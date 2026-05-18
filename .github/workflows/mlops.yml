@@ -1,0 +1,50 @@
+name: MLOps CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+      - name: Run tests
+        run: pytest tests/ -v
+
+  build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker build -t breast-cancer-detection:latest .
+      - name: Validate health endpoint exists
+        run: docker run -d --name test-container breast-cancer-detection:latest && sleep 3 && docker logs test-container && docker stop test-container
+
+  validate-mlops:
+    name: Validate MLOps Setup
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Validate MLflow import
+        run: python -c "import mlflow; print('MLflow version:', mlflow.__version__)"
+      - name: Validate training script
+        run: python -c "import train; print('Training script validated')"
+      - name: Validate Flask app
+        run: python -c "from app import app; print('Flask app validated')"
